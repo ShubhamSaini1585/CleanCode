@@ -5,7 +5,7 @@ public class ArrayFunctions {
         int largest;
     }
 
-    static Number findLargestSmallest(int numPool[], int poolcount) {
+    static Number findLargestSmallest(int[] numPool, int poolcount) {
         Number num = new Number();
         int index;
 
@@ -34,8 +34,8 @@ public class ArrayFunctions {
         return num;
     }
 
-    public static void main(String args[]) {
-        int numPool[] = {1000, 11, 445, 1, 330, 3000};
+    public static void main(String[] args) {
+        int[] numPool = {1000, 11, 445, 1, 330, 3000};
         int poolCount = 6;
         Number num = findLargestSmallest(numPool, poolCount);
         System.out.printf("\nSmallest Number is %d", num.smallest);
